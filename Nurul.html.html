@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria's Secret | Luxury Sleepwear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Montserrat', 'sans-serif']
+          },
+          colors: {
+            pinklux: '#e9a8ba',
+            blush: '#fff5f7',
+            darklux: '#171315'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-darklux bg-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-black text-white text-center py-2 text-[10px] tracking-[3px]">
+    LUXURY SLEEPWEAR COLLECTION
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="bg-white sticky top-0 z-50 border-b border-pink-100">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <button id="menuButton" class="md:hidden text-xl" aria-label="Buka menu">☰</button>
+
+      <a href="#" class="font-serif text-xl md:text-2xl tracking-wide">
+        VICTORIA'S <span class="text-pink-500">SECRET</span>
+      </a>
+
+      <div class="hidden md:flex gap-8 text-xs tracking-widest uppercase">
+        <a href="#" class="hover:text-pink-500">Home</a>
+        <a href="#koleksi" class="hover:text-pink-500">Collections</a>
+        <a href="#produk" class="hover:text-pink-500">Sleepwear</a>
+        <a href="#tentang" class="hover:text-pink-500">About</a>
+      </div>
+
+      <a href="#produk" class="text-sm">♡ <span class="hidden sm:inline">Shop</span></a>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4 text-sm">
+      <a href="#koleksi" class="block">Collections</a>
+      <a href="#produk" class="block">Sleepwear</a>
+      <a href="#tentang" class="block">About Us</a>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="relative min-h-[580px] flex items-center bg-black overflow-hidden">
+    <img
+      src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85"
+      alt="Interior kamar tidur mewah"
+      class="absolute inset-0 w-full h-full object-cover opacity-65">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 py-20 text-white">
+      <p class="text-pinklux tracking-[5px] text-xs mb-6">
+        THE ART OF BEAUTIFUL LIVING
+      </p>
+
+      <h1 class="font-serif text-5xl md:text-7xl leading-tight max-w-2xl">
+        Luxury<br>
+        <span class="italic text-pinklux">Sleepwear</span>
+        Collection
+      </h1>
+
+      <p class="mt-6 max-w-md text-sm leading-7 text-white/80">
+        Temukan keindahan dan kenyamanan melalui koleksi
+        baju tidur satin premium dengan sentuhan feminin
+        yang elegan untuk malam istimewa Anda.
+      </p>
+
+      <a href="#produk"
+        class="inline-block mt-9 bg-pinklux text-black px-9 py-4 text-xs tracking-[3px] hover:bg-white transition">
+        SHOP NOW →
+      </a>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-7 text-center">
+      <div>
+        <p class="text-xl text-pink-600">✧</p>
+        <h3 class="text-xs mt-2 uppercase tracking-widest">Premium Quality</h3>
+        <p class="text-[10px] text-gray-500 mt-2">Bahan lembut dan nyaman</p>
+      </div>
+      <div>
+        <p class="text-xl text-pink-600">♡</p>
+        <h3 class="text-xs mt-2 uppercase tracking-widest">Elegant Design</h3>
+        <p class="text-[10px] text-gray-500 mt-2">Gaya feminin mewah</p>
+      </div>
+      <div>
+        <p class="text-xl text-pink-600">✿</p>
+        <h3 class="text-xs mt-2 uppercase tracking-widest">Soft Satin</h3>
+        <p class="text-[10px] text-gray-500 mt-2">Halus di kulit</p>
+      </div>
+      <div>
+        <p class="text-xl text-pink-600">◇</p>
+        <h3 class="text-xs mt-2 uppercase tracking-widest">Timeless Style</h3>
+        <p class="text-[10px] text-gray-500 mt-2">Elegan sepanjang waktu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="koleksi" class="py-20 bg-blush">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-pink-600 text-xs tracking-[4px]">DISCOVER YOUR STYLE</p>
+        <h2 class="font-serif text-4xl md:text-5xl mt-4">Our Collections</h2>
+        <p class="text-gray-500 text-sm mt-4">Elegance in every detail.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="#produk" class="relative group overflow-hidden h-[400px]">
+          <img src="https://images.unsplash.com/photo-1618244972963-dbad4b8a7080?auto=format&fit=crop&w=800&q=85"
+            alt="Koleksi pakaian feminin"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div class="absolute bottom-8 left-7 text-white">
+            <p class="text-xs tracking-widest">01 / COMFORT</p>
+            <h3 class="font-serif text-3xl mt-2">Sleepwear</h3>
+            <p class="text-xs mt-3 underline">Explore Collection →</p>
+          </div>
+        </a>
+
+        <a href="#produk" class="relative group overflow-hidden h-[400px]">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=85"
+            alt="Koleksi fashion feminin"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div class="absolute bottom-8 left-7 text-white">
+            <p class="text-xs tracking-widest">02 / EVERYDAY</p>
+            <h3 class="font-serif text-3xl mt-2">Soft Essentials</h3>
+            <p class="text-xs mt-3 underline">Explore Collection →</p>
+          </div>
+        </a>
+
+        <a href="#produk" class="relative group overflow-hidden h-[400px]">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85"
+            alt="Fashion premium"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div class="absolute bottom-8 left-7 text-white">
+            <p class="text-xs tracking-widest">03 / SIGNATURE</p>
+            <h3 class="font-serif text-3xl mt-2">New Arrivals</h3>
+            <p class="text-xs mt-3 underline">Explore Collection →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLEEPWEAR PRODUCTS -->
+  <section id="produk" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-pink-600 text-xs tracking-[4px]">MADE FOR YOUR NIGHTS</p>
+        <h2 class="font-serif text-4xl md:text-5xl mt-4">Luxury Sleepwear</h2>
+        <p class="text-gray-500 text-sm mt-4">
+          Koleksi baju tidur pilihan dengan gaya modern dan elegan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- PRODUCT 1 -->
+        <article class="group">
+          <div class="relative overflow-hidden bg-pink-50">
+            <span class="absolute top-3 left-3 z-10 bg-white px-3 py-1 text-[9px] tracking-widest">NEW</span>
+            <img src="https://images.unsplash.com/photo-1618244972963-dbad4b8a7080?auto=format&fit=crop&w=700&q=85"
+              alt="Pink satin sleepwear"
+              class="w-full h-64 md:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <button onclick="addToCart('Pink Satin Pajama',1299000)"
+              class="absolute bottom-0 left-0 w-full bg-white/95 py-3 text-[10px] uppercase tracking-widest hover:bg-pinklux">
+              + Add to Bag
+            </button>
+          </div>
+          <h3 class="text-xs md:text-sm mt-4">Pink Satin Pajama</h3>
+          <p class="text-pink-700 text-xs mt-2">Rp 1.299.000</p>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="group">
+          <div class="relative overflow-hidden bg-pink-50">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85"
+              alt="Black elegant nightwear"
+              class="w-full h-64 md:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <button onclick="addToCart('Black Nightdress',1499000)"
+              class="absolute bottom-0 left-0 w-full bg-white/95 py-3 text-[10px] uppercase tracking-widest hover:bg-pinklux">
+              + Add to Bag
+            </button>
+          </div>
+          <h3 class="text-xs md:text-sm mt-4">Black Nightdress</h3>
+          <p class="text-pink-700 text-xs mt-2">Rp 1.499.000</p>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="group">
+          <div class="relative overflow-hidden bg-pink-50">
+            <span class="absolute top-3 left-3 z-10 bg-white px-3 py-1 text-[9px] tracking-widest">FAVORITE</span>
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=85"
+              alt="Soft rose sleepwear"
+              class="w-full h-64 md:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <button onclick="addToCart('Soft Rose Pajama',1199000)"
+              class="absolute bottom-0 left-0 w-full bg-white/95 py-3 text-[10px] uppercase tracking-widest hover:bg-pinklux">
+              + Add to Bag
+            </button>
+          </div>
+          <h3 class="text-xs md:text-sm mt-4">Soft Rose Pajama</h3>
+          <p class="text-pink-700 text-xs mt-2">Rp 1.199.000</p>
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="group">
+          <div class="relative overflow-hidden bg-pink-50">
+            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=700&q=85"
+              alt="Signature satin collection"
+              class="w-full h-64 md:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <button onclick="addToCart('Signature Satin Robe',1699000)"
+              class="absolute bottom-0 left-0 w-full bg-white/95 py-3 text-[10px] uppercase tracking-widest hover:bg-pinklux">
+              + Add to Bag
+            </button>
+          </div>
+          <h3 class="text-xs md:text-sm mt-4">Signature Satin Robe</h3>
+          <p class="text-pink-700 text-xs mt-2">Rp 1.699.000</p>
+        </article>
+
+      </div>
+      <p id="cartMessage" class="text-center text-sm text-pink-700 mt-8"></p>
+    </div>
+  </section>
+
+  <!-- PROMOTION -->
+  <section class="bg-darklux text-white">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 text-center">
+      <p class="text-pinklux text-xs tracking-[4px]">A SPECIAL MOMENT</p>
+      <h2 class="font-serif text-4xl md:text-6xl mt-5">
+        Your Night, Your Luxury.
+      </h2>
+      <p class="text-sm text-gray-300 mt-5">
+        Temukan gaya favorit Anda dalam koleksi sleepwear kami.
+      </p>
+      <a href="#produk" class="inline-block bg-pinklux text-black px-9 py-4 mt-8 text-xs tracking-widest hover:bg-white transition">
+        SHOP THE COLLECTION →
+      </a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="bg-blush py-16 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <p class="text-pink-600 text-xs tracking-[4px]">JOIN OUR WORLD</p>
+      <h2 class="font-serif text-3xl md:text-4xl mt-4">A Note of Elegance</h2>
+      <p class="text-gray-500 text-xs mt-4 leading-6">
+        Dapatkan informasi koleksi terbaru dan inspirasi gaya.
+      </p>
+      <form id="newsletter" class="flex mt-8 border-b border-black">
+        <input required type="email" placeholder="Masukkan email Anda"
+          class="flex-1 min-w-0 bg-transparent py-4 text-xs outline-none">
+        <button class="text-xs tracking-widest px-4 hover:text-pink-600">SUBSCRIBE →</button>
+      </form>
+      <p id="newsletterMessage" class="text-xs mt-4"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="tentang" class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        <div>
+          <h2 class="font-serif text-xl">VICTORIA'S SECRET</h2>
+          <p class="text-gray-400 text-xs leading-6 mt-5">
+            Beauty. Confidence. Elegance.<br>
+            Luxury for your everyday moments.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs tracking-widest mb-5">EXPLORE</h3>
+          <ul class="space-y-3 text-xs text-gray-400">
+            <li><a href="#koleksi" class="hover:text-pinklux">Collections</a></li>
+            <li><a href="#produk" class="hover:text-pinklux">Sleepwear</a></li>
+            <li><a href="#produk" class="hover:text-pinklux">Best Sellers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs tracking-widest mb-5">CUSTOMER CARE</h3>
+          <ul class="space-y-3 text-xs text-gray-400">
+            <li><a href="#" class="hover:text-pinklux">Contact Us</a></li>
+            <li><a href="#" class="hover:text-pinklux">Shipping</a></li>
+            <li><a href="#" class="hover:text-pinklux">Returns</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs tracking-widest mb-5">FOLLOW US</h3>
+          <p class="text-xs text-gray-400">Instagram · TikTok · Pinterest</p>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 mt-12 pt-6 text-center text-[10px] text-gray-500">
+        © 2026 Victoria's Secret — Landing Page Demo
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    let cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      document.getElementById('cartMessage').textContent =
+        name + ' berhasil ditambahkan ke keranjang. Total produk: ' + cart.length;
+    }
+
+    document.getElementById('newsletter').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('newsletterMessage').textContent =
+        'Terima kasih! Formulir demo berhasil dikirim.';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
